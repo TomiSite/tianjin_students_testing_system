@@ -75,7 +75,7 @@
 
 ### 安装依赖
 ```bash
-cd /Users/lixiaosong/Downloads/math-learning
+cd /math-learning
 npm install
 ```
 
