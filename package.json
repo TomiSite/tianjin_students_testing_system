@@ -5,9 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:bg": "nohup vite > vite.log 2>&1 &",
+    "dev:bg:stop": "pkill -f 'vite' || true",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "preview:bg": "nohup vite preview > preview.log 2>&1 &",
+    "preview:bg:stop": "pkill -f 'vite preview' || true"
   },
   "dependencies": {
     "@types/katex": "^0.16.8",
